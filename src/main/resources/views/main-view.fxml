@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<?import java.net.URL?>
+<AnchorPane id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="$CONTROLLER_NAME$">
+   <children>
+      <TextField layoutX="391.0" layoutY="216.0" promptText="Type the author's name" styleClass="input" stylesheets="@../css/styles.css" />
+      <TextField layoutX="391.0" layoutY="127.0" promptText="Type the book's name" styleClass="input" stylesheets="@../css/styles.css" />
+      <Label layoutX="224.0" layoutY="127.0" styleClass="input" stylesheets="@../css/styles.css" text="Book's name:" />
+      <Label layoutX="219.0" layoutY="215.0" styleClass="input" stylesheets="@../css/styles.css" text="Book's author:" />
+      <Label layoutX="684.0" layoutY="128.0" styleClass="input" stylesheets="@../css/styles.css" text="Book pages:" />
+      <Label id="title" layoutX="569.0" layoutY="31.0" stylesheets="@../css/styles.css" text="LN CRUD" />
+      <TextField layoutX="835.0" layoutY="128.0" promptText="Type the book pages" styleClass="input" stylesheets="@../css/styles.css" />
+      <TableView id="table" layoutX="5.0" layoutY="392.0" prefHeight="400.0" prefWidth="1268.0">
+        <columns>
+          <TableColumn editable="false" prefWidth="75.0" styleClass="tableTitles" text="ID" />
+          <TableColumn editable="false" prefWidth="75.0" styleClass="tableTitles" text="Name" />
+            <TableColumn editable="false" prefWidth="75.0" styleClass="tableTitles" text="Author" />
+            <TableColumn editable="false" prefWidth="76.0" styleClass="tableTitles" text="Pages" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+   <stylesheets>
+       <URL value="@/css/styles.css"/>
+   </stylesheets>
+</AnchorPane>

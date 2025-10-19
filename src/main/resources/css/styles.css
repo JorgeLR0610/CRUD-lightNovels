@@ -1,0 +1,20 @@
+#mainPane{
+    -fx-background-color: rgba(28, 25, 25, 0.873);
+}
+
+.input{
+    -fx-font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    -fx-font-size: 20px;
+    -fx-alignment: center;
+}
+
+#title{
+    -fx-font-size: 35px;
+}
+#table{
+    -fx-background-color: grey;
+}
+.tableTitles{
+    -fx-font-size: 20px;
+    -fx-alignment: center;
+}
